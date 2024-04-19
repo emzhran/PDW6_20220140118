@@ -1,0 +1,91 @@
+/* command dibawah berfungsi untuk mengatur letak dari elemen body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* command dibawah berfungsi untuk mengatur letak dari video yang terletak pada elemen end-video */
+#end-video {
+    width: 100%;
+    height: 100vh; 
+    max-height: 100%; 
+    object-fit: cover;
+}
+
+/* command dibawah berfungsi untuk mengatur letak dari class lagu */
+.lagu {
+    display: flex;
+    align-items: center;
+}
+
+/* command dibawah berfungsi untuk mengatur elemen img yang terletak pada class lagu */
+.lagu img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+/* command dibawah berfungsi untuk mengatur tampilan dari class judul-lagu yang terletak pada class lagu */
+.lagu .judul-lagu {
+    font-size: 36px; 
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* command dibawah berfungsi untuk mengatur tampilan dari class lokasi yang terletak pada class lagu */
+.lagu .lokasi{
+    font-size: 20px; 
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* command dibawah berfungsi untuk mengatur tampilan dan letak dari class video-overlay */
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* command dibawah berfugnsi untuk mengatur letak dari class mulai */
+.mulai{
+    padding-right: 50px;
+}
+
+/* command dibawah berfungsi untuk mengatur tampilan dan letak dari class waktu */
+.waktu {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 50px;
+}
+
+/* command dibawah berfungsi untuk mengatur tampilan dan posisi dari class volume-label */
+.volume-label {
+    color: white;
+    margin-right: 5px; 
+}
+
+/* command dibawah berfungsi untuk mengatur tampilan dan posisi dari class video-label */
+.video-label {
+    color: white;
+    margin-right: 5px;
+}
+
+/* command dibawah berfungsi untuk mengatur letak dari elemen button yang terdapat pada class controls  */
+.controls button {
+    font-size: 20px; 
+    padding: 8px; 
+    border-radius: 15px; 
+}
+
+

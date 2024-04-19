@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- command dibawah berfungsi untuk menghubungkan file html dengan file css yang berada pada folder style -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- command dibawah berfungsi untuk memuat sebuah stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Praktikum 6</title>
+</head>
+<body>
+   <video id="end-video">
+        <!-- command dibawah berfungsi untuk memasukkan mengambil video yang terletak pada folder assets -->
+        <source src="./assets/lebaran.mp4" type="video/mp4" mute>
+        Your browser does not support this video.
+    </video>
+    <div class="video-overlay">
+        <div class="lagu">
+            <!-- command dibawah berfunsi untuk memasukkan gambar yang terletak pada folder assets -->
+            <img src="./assets/sky.jpeg" alt="backgorund">
+            <div class="info-lagu">
+                <!-- command dibawah berfungsi untuk membuat header yang berisi tulisan Lebaran Series -->
+                <h2 class="judul-lagu">lebaran Series</h2>
+                <!-- command dibawah berfungsi untuk membuat paragraph yang berisi tulisan Samarinda 04-2024 -->
+                <p class="lokasi">Samarinda 04-2024</p>
+            </div>
+            <!-- command dibawah berfungsi untuk membuat class waktu, yang nantinya akan menampilkan informasi waktu dari video -->
+            <span class="waktu">0:00 / 0:00</span>
+        </div>
+        <div class="mulai">
+            <!-- command dibawah berfungsi untuk membuat button -->
+            <button class="start" onclick="playPause()">
+                <!-- command dibawah berfungsi untuk mengimpor logo play -->
+                <i class="fas fa-play"></i>
+            </button>
+            <!-- command dibawah berfungsi untuk membuat button -->
+            <button class="stop" onclick="playPause()">
+                <!-- command dibawah berfungsi untuk mengimpor logo pause -->
+                <i class="fas fa-pause"></i>
+            </button>
+            <div class="volume-controls">
+                <!-- command dibawah berfungsi untuk membuat class volume-label yang berisi text Suara -->
+                <span class="volume-label">Suara</span>
+                <!-- command dibawah berfungsi untuk membuat slider (penggeser) -->
+                <input type="range" min="0" max="1" step="0.1" value="1" class="slider" id="volumeSlider">
+            </div>
+            <div class="seek-controls">
+                <!-- command dibawah berfungsi untuk membuat class video-label yang berisi text Durasi -->
+                <span class="video-label">Durasi</span>
+                <!-- command dibawah berfungsi untuk membuat slider (penggeser) -->
+                <input type="range" min="0" max="100" value="0" class="slider" id="seekSlider">
+            </div>
+            <!-- command dibawah berfungsi untuk mengimpor audio yang terletak pada folder assets -->
+            <audio src="./assets/lebaran.mp3" class="musik"></audio>
+        </div>
+    </div>
+    <!-- command dibawah berfungsi untuk menghubungkan file html dengan file main.js yang terletak pada folder script -->
+    <script src="./script/main.js"></script>
+</body>
+</html>
